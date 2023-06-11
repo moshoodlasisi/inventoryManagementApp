@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import "./inventory.css"
-import { Table } from './components/Table';
+import Table from './components/Table';
 
 function InventoryPage() {
   const [inventories, setInventories] = useState([]);
@@ -30,9 +30,9 @@ function InventoryPage() {
         },
       });
 
-      const inventories = await promiseResponse.json();
+      const InventoriesResult = await promiseResponse.json();
 
-      populateInventoriesTable(inventories);
+      populateInventoriesTable(InventoriesResult);
     } catch (error) {
       alert('Error: ' + error.message);
       console.log('Failed to fetch inventories', error.message);
@@ -73,7 +73,7 @@ function InventoryPage() {
         </button>
       </div>
 
-      <Table />
+      <Table inventories={inventories} />
     </div>
   );
 }

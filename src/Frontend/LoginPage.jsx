@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import "./login.css"
-import { ErrorMessage } from './components/ErrorMessage';
+import ErrorMessage from './components/ErrorMessage';
 
 function LoginPage() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [showError, setShowError] = useState(false);
-
-    const history = useHistory();
+    const history = useHistory
 
     const handleUsernameChange = (event) => {
         setUsername(event.target.value);
