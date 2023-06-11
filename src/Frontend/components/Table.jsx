@@ -1,4 +1,6 @@
-export default function Table() {
+export default function Table(props) {
+    const {inventories} = props
+
     return (
         <table>
             <thead>
