@@ -7,7 +7,7 @@ function LoginPage() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [showError, setShowError] = useState(false);
-    const history = useHistory
+    const history = useHistory()
 
     const handleUsernameChange = (event) => {
         setUsername(event.target.value);
@@ -20,8 +20,6 @@ function LoginPage() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-
-        console.log(':::::: FORM DATA ::::::::', { username, password });
 
         try {
             const promiseResponse = await fetch('http://localhost:8000/login', {

@@ -50,13 +50,12 @@ function InventoryPage() {
   };
 
   const handleNewInventory = () => {
-    history.push('/addInventory');
+    history.push('/add-inventory');
   }
 
   return (
     <div className="container">
       <h1 className="welcome">{welcomeText}</h1>
-
       <div className="logout-container">
         <button onClick={handleLogout} id="logout">
           Log out
