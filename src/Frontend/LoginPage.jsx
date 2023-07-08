@@ -52,7 +52,7 @@ function LoginPage() {
     };
 
     return (
-        <div className="container">
+        <div className="container1">
             
             <div>
                {showError && (
@@ -60,8 +60,8 @@ function LoginPage() {
                )} 
             </div>
             
-            <h1>Welcome Back!</h1>
-            <form onSubmit={handleSubmit} id="login-form">
+            <h1 id='welcome'>Welcome Back!</h1>
+            <form className='form1' onSubmit={handleSubmit} id="login-form">
                 <label htmlFor="username">Username:</label>
                 <input
                     type="text"

@@ -1,0 +1,30 @@
+.edit {
+    background: #8683FE;
+    color: white;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 54.55px;
+    height: 21px;
+}
+
+.delete {
+    background: red;
+    color: white;
+    border-radius: 10px;
+    width: 54.55px;
+    height: 21px;
+}
+
+.edit:hover{
+    cursor: pointer;
+    background: #100e92;
+    width: 60px;
+    height: 23px;
+}
+
+.delete:hover{
+    cursor: pointer;
+    background: rgb(46, 4, 4);
+    width: 60px;
+    height: 23px;
+}

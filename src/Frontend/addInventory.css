@@ -1,24 +1,24 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    align-content: flex-start;
-    margin-left: 10%;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 0px;
-    width: 746px;
-    height: 650px;
-    background: #FFFFFF;
+    align-content: center;
 }
 
-.form {
+.container3 {
+    width: 686px;
+    height: 624px;
+    padding-right: 20px;
+    padding-left: 20px;
+    top: 53px;
+    position: relative;
+}
+
+.form3 {
     display: flex;
     flex-direction: column;
+    align-content: center;
+    height: 624px;
 }
 
 label {
@@ -40,7 +40,7 @@ input {
     border: none;
 }
 
-button {
+#create {
     width: 160px;
     height: 40px;
     font-family: 'Kokoro';
@@ -53,4 +53,10 @@ button {
     background: #8683FE;
     border-radius: 15px;
     border: none;
+    margin-top: 10px;
+}
+
+.topic {
+    padding-left: 0px;
+    margin-left: 0px;
 }

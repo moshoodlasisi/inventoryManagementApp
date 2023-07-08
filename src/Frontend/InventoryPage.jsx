@@ -54,7 +54,7 @@ function InventoryPage() {
   }
 
   return (
-    <div className="container">
+    <div className="container2">
       <h1 className="welcome">{welcomeText}</h1>
       <div className="logout-container">
         <button onClick={handleLogout} id="logout">
@@ -72,7 +72,7 @@ function InventoryPage() {
         </button>
       </div>
 
-      <Table inventories={inventories} />
+      <Table inventories={inventories} setInventories={setInventories} />
     </div>
   );
 }

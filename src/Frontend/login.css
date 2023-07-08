@@ -8,37 +8,40 @@ body {
     align-content: center;
 }
   
-.container {
+.container1 {
     position: relative;
-    width: 686px;
-    height: 624px;
     background: #FFFFFF;
     margin-top: 0px;
     padding-top: 0px;
+    width: 686px;
+    height: 624px;
 }
   
-h1 {
-    position: absolute;
+#welcome {
+    position: relative;
     width: 180px;
     height: 45px;
-    left: 144px;
     top: 137px;
     font-size: 24px;
     line-height: 36px;
     color: #000000;
+    padding-left: 150px;
 }
   
-form {
-    position: absolute;
+.form1 {
+    position: relative;
     width: 424px;
-    height: 74px;
-    left: 144px;
-    top: 226px;
+    top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-left: 150px;
 }
   
 input[type=text],
 input[type=password] {
-    width: 100%;
+    width: 424px;
     height: 45px;
     background: #EDEDED;
     border-radius: 15px;
@@ -70,6 +73,7 @@ input[type=submit] {
     left: 164px;
     top: 0px;
     background: #221F1F;
+    margin-left: 150px;
 }
   
 .error p {
@@ -78,4 +82,11 @@ input[type=submit] {
     line-height: 60px;
     text-align: center;
     color: #FFFFFF;
+}
+
+input[type=submit]:hover {
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+    background: #3e3bf5;
 }

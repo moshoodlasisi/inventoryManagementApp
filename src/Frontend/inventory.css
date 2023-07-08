@@ -5,12 +5,12 @@ body {
     align-content: center;
 }
 
-.container {
+.container2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 0px;
-    width: 700px;
+    width: 900px;
 }
 
 table {
@@ -21,7 +21,7 @@ table {
 }
 
 th, td {
-    text-align: left;
+    text-align: center;
     padding: 8px;
     background-color: #EDEDED;
     border-bottom: 10px solid #FFFFFF;
@@ -51,6 +51,7 @@ tr:nth-child(even) {
     font-size: 24px;
     line-height: 36px;
     color: #000000;
+    left: 0px;
 }
 
 .welcome {
@@ -62,10 +63,12 @@ tr:nth-child(even) {
     font-size: 15px;
     line-height: 18px;
     color: #000000;
+    font-weight: bold;
     display: flex;
     flex-direction: row;
     align-self: flex-start;
     position: relative;
+    left: 0px;
 }
 
 .button-container {
@@ -105,8 +108,8 @@ tr:nth-child(even) {
 }
 
 #logout {
-    width: 85.1px;
-    height: 24px;
+    width: 90px;
+    height: 30px;
     top: 11px;
     border: none;
     font-family: 'Kokoro';
@@ -122,4 +125,18 @@ tr:nth-child(even) {
     color: #FFFFFF;
     background: #8683FE;
     border-radius: 15px;
+}
+
+#logout:hover {
+    cursor: pointer;
+    width: 90px;
+    height: 35px;
+    background: #3e3bf5;
+}
+
+#addInventory:hover {
+    cursor: pointer;
+    width: 176px;
+    height: 40px;
+    background: rgb(177, 174, 174);
 }
